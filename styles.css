@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(222, 232, 236);
   }
 
 .container {
@@ -233,8 +233,64 @@ input {
 }
 
 .notifications {
-    background-color: rgb(155, 212, 219);
     grid-column: 5 / 6;
     grid-row: 3;
     height: 100%;
+    padding: 10px 20px;
+}
+
+.announcements {
+    border-radius: 8px;
+}
+
+#title-section {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.announcements,
+.trending {
+    background-color: white;
+    text-align: left;
+    padding: 20px 20px;
+    color: rgb(109, 109, 109);
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.announcements > div > p {
+    color: black;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#line {
+    height: 1px;
+    background-color:rgb(179, 179, 179);
+}
+
+.users {
+    display: flex;
+}
+
+.users > #profile-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.user-info p {
+    margin: 0;
+    color: black;
 }
