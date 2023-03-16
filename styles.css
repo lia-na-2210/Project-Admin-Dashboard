@@ -31,7 +31,6 @@ body {
 .search-icon {
     height: 20px;
     width: 20px;
-    background-color: gray;
     margin-right: 30px;
 }
 
@@ -41,6 +40,7 @@ input {
     background-color: rgb(238, 238, 238);
     height: 30px;
     width: 600px;
+    padding-left: 20px;
     border-radius: 15px;
     margin-right: 100px;
 }
@@ -56,7 +56,7 @@ input {
 #bell {
     height: 20px;
     width: 20px;
-    background-color: gray;
+    overflow: hidden;
 }
 
 #profile-pic {
@@ -64,6 +64,13 @@ input {
     width: 35px;
     border-radius: 17px;
     background-color: rgb(255, 166, 0);
+    overflow: hidden;
+}
+
+#profile-pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .menu {
@@ -155,11 +162,14 @@ input {
 }
 
 #logo {
-    background-color: white;
     height: 40px;
     width: 40px;
     border-radius: 16px;
     grid-column: 1 / 2;
+}
+
+#logo img {
+    filter: invert(1);
 }
 
 .sidemenu {
@@ -187,11 +197,14 @@ input {
 }
 
 .icon {
-    background-color: white;
     height: 20px;
     width: 20px;
     border-radius: 6px;
     grid-column: 1 / 2;
+}
+
+.icon img {
+    filter: invert(1);
 }
 
 
@@ -223,7 +236,23 @@ input {
     text-align: left;
     padding: 20px 65px 35px 20px;
     color: rgb(109, 109, 109);
+    position: relative;
+}
 
+.project-opt {
+    position: absolute;
+    margin-bottom: 15px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: right;
+    margin-right: 65px;
+    gap: 16px;
+}
+
+.project-opt img {
+    height: 20px;
+    width: 20px;
 }
 
 .card > .title {
@@ -280,6 +309,13 @@ input {
     height: 40px;
     width: 40px;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.users > #profile-pic > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .user-info {
